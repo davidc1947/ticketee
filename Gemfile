@@ -28,6 +28,13 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+group :test, :development do
+gem 'rspec-rails', "~> 2.14"
+end
+group :test do
+gem 'capybara', "2.1.0"
+end
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
